@@ -1,3 +1,5 @@
 title: Ming Chun Wei (Jim)'s homepage
 description: Jim's resume and online portfolio
-theme: minimal-mistakes-jekyll
+remote_theme: pages-themes/minimal@v0.2.0
+plugins:
+- jekyll-remote-theme
