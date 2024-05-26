@@ -21,18 +21,47 @@
 title: Jim Wei's Portfolio
 email: jimwei.cs@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Jim Wei's portfolio site for displaying projects and resume
+  Jim Wei's portfolio
 baseurl: "" # the subpath of your site, e.g. /blog
 domain: "jimwei6.github.io"
 url: "https://jimwei6.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+github_username:  jimwei6
+
+author: {
+  email: jimwei.cs@gmail.com,
+  linkedin: https://www.linkedin.com/in/jimweiubc,
+  github: https://github.com/jimwei6
+}
+
 
 # Build settings
 theme: minima
 plugins:
   - jekyll-feed
 
+projects: []
+work: [{
+    company: "Hypatia Systems",
+    url: "https://hypatiasys.com",
+    function: "Part Time Software Developer",
+    date: "Sept 2021 - Present"
+  }, {
+    company: "Digital Solutions - The University of British Columbia",
+    url: "https://mednet.med.ubc.ca/resources/it/",
+    function: "Programmer Analyst Intern",
+    date: "Jan 2022 - Sept 2022"
+  }, {
+    company: "The University of British Columbia",
+    function: "Teaching Assistant",
+    url: "https://www.cs.ubc.ca/about",
+    details: "CPSC100 Introduction to Computational Thinking, CPSC310 Introduction to Software Engineering, CPSC330 Applied Machine Learning",
+    date: "July 2020 - Aug 2020, Sept 2022 - June 2023"
+  }, {
+    company: "Hypatia Systems",
+    url: "https://hypatiasys.com",
+    function: "Software Developer Intern",
+    date: "Jan 2021 - Aug 2021"
+  }]
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
