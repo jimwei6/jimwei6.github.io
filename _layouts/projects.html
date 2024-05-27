@@ -2,7 +2,7 @@
 layout: base
 ---
 {% assign posts = site.posts %}
-<div class="projects">
+<div class="projects pb-5">
   {%- include jumbo.html -%}
   <div class="container">
     <h2 class="mb-4">Projects</h2>
@@ -13,12 +13,10 @@ layout: base
         <a class="text-decoration-none" href="{{ post.url | relative_url }}">
           <div class="card border-dark border-opacity-10 rounded-0">
             <div class="card-body">
-              <h3 class="card-title">{{ post.title }}</h3>
-              <!-- <h4 class="card-subtitle mb-2">{{ job.company }}</h4> -->
+              <h3 class="card-title mb-0">{{ post.title }}</h3>
+              <p class="mb-0 fw-bold">({{ post.technologies }})</p>
               <h6 class="text-muted">{{ post.year }}</h6>
-              {% if post.short_description -%}
-              <h6 class="text-muted mt-2">{{ post.short_description }}</h6>
-              {% endif %}
+              <h6 class="text-secondary mt-3">{{ post.short_description }}</h6>
             </div>
           </div>
         </a>

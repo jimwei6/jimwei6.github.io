@@ -5,9 +5,11 @@ layout: base
   <header class="post-header mt-5">
     <h2 class="post-title ">Project: {{ page.title }} - {{ page.year }}</h2>
     <h5 class="text-muted">Summary: {{ page.short_description }}</h5>
-    <a href="https://github.com/jimwei6/MediaTracker-Android-">
+    {%- if page.project_url -%}
+    <a href="{{ page.project_url }}" target="_blank">
       <h5>Repository</h5>
     </a>
+    {%- endif -%}
   </header>
 
   <div class="post-content e-content mt-5 mb-2" itemprop="articleBody">
@@ -18,15 +20,16 @@ layout: base
         <h4 class="text-decoration-underline">Description</h4>
         {{ content }}
       </div>
+      <div class="col-1"></div>
+      {%- if page.video -%}
       <div class="col">
-        {%- if page.video -%}
         <h4 class="text-decoration-underline">Demo video</h4>
         <iframe width="560" height="315" src="{{ page.video }}" title="YouTube video player" frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </iframe>
-        {%- endif -%}
       </div>
+      {%- endif -%}
     </div>
   </div>
 </article>
