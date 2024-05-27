@@ -1,0 +1,32 @@
+---
+layout: base
+---
+<article class="post h-entry container">
+  <header class="post-header mt-5">
+    <h2 class="post-title ">Project: {{ page.title }} - {{ page.year }}</h2>
+    <h5 class="text-muted">Summary: {{ page.short_description }}</h5>
+    <a href="https://github.com/jimwei6/MediaTracker-Android-">
+      <h5>Repository</h5>
+    </a>
+  </header>
+
+  <div class="post-content e-content mt-5 mb-2" itemprop="articleBody">
+    <h4 class="text-decoration-underline">Technologies</h4>
+    <p class="fw-bold">{{ page.technologies }}</p>
+    <div class="row mt-5">
+      <div class="col">
+        <h4 class="text-decoration-underline">Description</h4>
+        {{ content }}
+      </div>
+      <div class="col">
+        {%- if page.video -%}
+        <h4 class="text-decoration-underline">Demo video</h4>
+        <iframe width="560" height="315" src="{{ page.video }}" title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </iframe>
+        {%- endif -%}
+      </div>
+    </div>
+  </div>
+</article>

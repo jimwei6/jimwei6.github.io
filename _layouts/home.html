@@ -2,12 +2,13 @@
 layout: base
 ---
 <div class="home">
+  {%- include jumbo.html -%}
   <div class="container">
     <h2 class="mb-4">Work Experiences</h2>
     <div class="row row-cols-1 row-cols-md-2 g-4">
       {%- for job in site.work -%}
       <div class="col">
-        <a class="text-decoration-none" href="{{ job.url }}">
+        <a class="text-decoration-none" href="{{ job.url }}" target="_blank">
           <div class="card border-dark border-opacity-10 rounded-0">
             <div class="card-body">
               <h3 class="card-title">{{ job.function }}</h3>
