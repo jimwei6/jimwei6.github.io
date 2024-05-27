@@ -16,18 +16,25 @@ layout: base
     <h4 class="text-decoration-underline">Technologies</h4>
     <p class="fw-bold">{{ page.technologies }}</p>
     <div class="row mt-5">
-      <div class="col">
+      <div class="col-12 col-xl-5">
         <h4 class="text-decoration-underline">Description</h4>
         {{ content }}
       </div>
-      <div class="col-1"></div>
+      <div class="col-1 col-xl-0"></div>
       {%- if page.video -%}
-      <div class="col">
+      <div class="col-12 col-xl-5">
         <h4 class="text-decoration-underline">Demo video</h4>
-        <iframe width="560" height="315" src="{{ page.video }}" title="YouTube video player" frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        </iframe>
+        <div class="d-none d-sm-block">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/{{ page.video }}"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </iframe>
+        </div>
+        <div class="d-sm-none">
+          <a href="https://www.youtube.com/watch/{{ page.video }}" target="_blank">View Video</a>
+        </div>
+
       </div>
       {%- endif -%}
     </div>
