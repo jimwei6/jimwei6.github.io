@@ -6,7 +6,7 @@ layout: base
     <h2 class="post-title ">Project: {{ page.title }} - {{ page.year }}</h2>
     <h5 class="text-muted">Summary: {{ page.short_description }}</h5>
     {%- if page.project_url -%}
-    <a href="{{ page.project_url }}" target="_blank">
+    <a class="d-inline-block" href="{{ page.project_url }}" target="_blank">
       <h5>Repository</h5>
     </a>
     {%- endif -%}
@@ -21,6 +21,12 @@ layout: base
         {{ content }}
       </div>
       <div class="col-1 col-xl-0"></div>
+      {%- if page.image -%}
+      <div class="col-12 col-xl-5">
+        <h4 class="text-decoration-underline">Demo Image</h4>
+        <img src="{{page.image}}" width="500" />
+      </div>
+      {%- endif -%}
       {%- if page.video -%}
       <div class="col-12 col-xl-5">
         <h4 class="text-decoration-underline">Demo video</h4>
@@ -34,7 +40,6 @@ layout: base
         <div class="d-sm-none">
           <a href="https://www.youtube.com/watch/{{ page.video }}" target="_blank">View Video</a>
         </div>
-
       </div>
       {%- endif -%}
     </div>
