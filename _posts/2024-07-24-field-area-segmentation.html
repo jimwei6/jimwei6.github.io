@@ -1,0 +1,35 @@
+---
+layout: post
+title: "Field Area Segmentation"
+technologies: "Python, NumPy, PyTorch, opencv, CNN, UNET"
+year: "2024"
+short_description: "Segmenting areas from satellite images."
+project_url: "https://github.com/jimwei6/Satellite-Image-Field-Segmentation-Experiments"
+image: "/field_segmentation.JPG"
+---
+
+
+This is a group project for the "Field Area Segmentation" competition on Solafune.
+The goal is to predict polygon coordinates in images in order to segment fields.
+<br /></br>
+<h5>Approaches:</h5>
+<ul>
+  <li>Using Mask R-CNN to predict field locations and polygons</li>
+  <li>Using Unet to predict field boundaries</li>
+</ul>
+
+<h5>Conclusion:</h5>
+The best model was using Mask R-CNN to predict field locations.
+However, the Mask R-CNN had trouble predicting images with huge amount of tiny fields, often only
+predicting up to half of the fields in the image.
+
+Comparatively, the Unet model was able to predict the field boundaries well, but the false positives
+in the images resulted in thresholding, and in turn extracting polygons.
+
+
+<br /><br />
+<b>Competition:</b> <a
+  href="https://solafune.com/competitions/d91572d9-1680-4b9e-b372-25e71093f81a?menu=about&tab=overview"
+  target="_blank">Solafune</a>
+<br />
+<b>Collaborators:</b> <a href="https://www.linkedin.com/in/tim-chou-246a13295/" target="_blank">Tim Chou</a>
