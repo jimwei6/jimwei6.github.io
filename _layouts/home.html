@@ -14,9 +14,9 @@ layout: base
               <h3 class="card-title">{{ job.function }}</h3>
               <h4 class="card-subtitle mb-2">{{ job.company }}</h4>
               <h6 class="text-muted">{{ job.date }}</h6>
-              <!-- {% if job.details -%}
-            <h6 class="text-muted mt-4">{{ job.details }}</h6>
-            {% endif %} -->
+              {% if job.details -%}
+              <h6 class="text-muted mt-4">{{ job.details }}</h6>
+              {% endif %}
             </div>
           </div>
         </a>
