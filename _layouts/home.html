@@ -9,10 +9,10 @@ layout: base
       {%- for job in site.work -%}
       <div class="col">
         <a class="text-decoration-none" href="{{ job.url }}" target="_blank">
-          <div class="card border-dark border-opacity-10 rounded-0">
+          <div class="card border-dark border-opacity-10 rounded-0 h-100">
             <div class="card-body">
-              <h3 class="card-title">{{ job.function }}</h3>
-              <h4 class="card-subtitle mb-2">{{ job.company }}</h4>
+              <h4 class="card-title">{{ job.function }}</h4>
+              <h6 class="card-subtitle mb-2">{{ job.company }}</h6>
               <h6 class="text-muted">{{ job.date }}</h6>
               {% if job.details -%}
               <h6 class="text-muted mt-4">{{ job.details }}</h6>
