@@ -41,6 +41,12 @@ plugins:
 
 projects: []
 work: [{
+    company: "ModiFace, L'Oreal Group Company",
+    url: "https://modiface.com/",
+    function: "Machine Learning Researcher Intern",
+    date: "May 2025 - Dec 2025"
+  },
+  {
     company: "BMO Lab for Creative Research in the Arts, Performance, Emerging Technologies and Artificial Intelligence Systems",
     url: "https://bmolab.artsci.utoronto.ca/",
     function: "Machine Learning Researcher (Work Study)",
